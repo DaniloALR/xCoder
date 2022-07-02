@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+@keyframes growup {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0B68F4;
+        font-size: 17px;
+    }
+}
+@keyframes growup-2 {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0B68F4;
+        font-size: 23px;
+    }
+}
+
+*{
+    font-family: 'Arimo', sans-serif;
+    text-decoration: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-color: #090909;
+}
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; left: 0; right: 0;
+
+}
+.header .logo img{
+    width: 7rem;
+    margin: 1.5rem 0 0 3rem;
+    background-color: none;
+}
+.header .logo img:hover{
+    filter: invert(40%) sepia(100%) saturate(5899%) hue-rotate(212deg) brightness(102%) contrast(92%);
+    transition-duration: 0.1s;
+}
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .navbar a{
+    display: flex;
+    margin: 0 5rem 0 0;
+    color: white;
+}
+.header .navbar a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.header div form{
+    max-width: 450px;
+    min-width: 450px;
+    width: 100%;
+    height: 2rem;
+
+    margin: -1% 0 0 4rem;
+
+    background-color: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.header div form input{
+    max-width: 450px;
+    width: 100%;
+    height: 2rem;
+
+    text-align: center;
+
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.container2 a{
+    color: white;
+    cursor: pointer;
+}
+.container2 a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.header .container2{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 0 0;
+}
+.header .container2 .login{
+    margin: 0 0.5rem 0 0;
+}
+.header .container2 .carrinho{
+    margin: 0 5rem 0 5rem;
+}
+.header .container2 .carrinho img{
+    width: 40px;
+    max-width: 60px;
+    min-width: 40px;
+}
+.header .container2 .carrinho img:hover{
+    filter: invert(40%) sepia(100%) saturate(5899%) hue-rotate(212deg) brightness(102%) contrast(92%);
+    transition-duration: 0.1s;
+}
+.img-destaque-semanal{
+    width: 850px;
+    min-width: 750px;
+    max-width: 860px;
+    border-radius: 20px;
+}
+.img-destaque-semanal:hover{
+    width: 855px;
+    transition-duration: 0.3s;
+}
+.container-img-destaque-semanal{
+    display: flex;
+}
+.main-content-dtq{
+    display: flex;
+    padding: 4% 15% 0;
+}
+.img-mouse{
+
+    width: 200px;
+}
+.img-teclado{
+    
+    width: 200px;
+}
+.img-headset{
+    
+    width: 200px;
+}
+.mouse-tecl-head{
+    width: 200px;
+    display: flex;
+    box-sizing: border-box;
+    margin-left: 50px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.mouse-tecl-head a img{
+    border-radius: 20px
+}
+.mouse-tecl-head a img:hover{
+    width: 205px;
+    transition-duration: 0.1s;
+}
+h1{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    cursor: default;
+
+    color: white;
+
+    margin: 5% 0 0 5%;
+}
+.container-lista-de-promocao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin: 4% 0 0 0;
+}
+.container-lista-de-promocao div{
+    display:inline-block;
+    margin-right: 4rem;
+}
+.container-lista-de-promocao img{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    max-width: 210px;
+    border-radius: 20px;
+}
+.div-lista-de-promocao p{
+    color: white;
+    margin-top: 4px;
+    text-align: center;
+    font-size: 18px;
+}
+.div-lista-de-promocao img:hover{
+    width: 205px;
+    transition-duration: 0.1s;
+}
+.container-turbine-sua-gplay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    margin: 5rem 0 8rem 0;
+}
+.container-turbine-sua-gplay div a img{
+    background-color: white;
+    width: 200px;
+    max-width: 210px;
+    min-width: 200px;
+    border-radius: 50%;
+
+    margin: 0 3rem 0 3rem;
+    
+}
+.container-turbine-sua-gplay div a img:hover{
+    width: 205px;
+    transition-duration: 0.1s;
+    border-radius: 20px;
+}
+.divider{
+    border: 1px solid #323232;
+    margin: 0 4rem 3rem 4rem;
+    border-radius:2px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 40% 2.5rem 10%;
+}
+footer a{
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+}
+footer a:hover{
+    color: #0B68F4; 
+    transition-duration: 0.1s;
+}
+.div-price{
+    width: 100%;
+    margin-top: 1rem;
+
+    background: #191919;;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.div-price a{
+    width: 100%;
+    display: block;
+    padding: 0 40%;
+    font-weight: 400;
+    color: #fff;
+}
+button .seta{
+    width: 20px;
+    height: 20px;
+}
+button{
+    background-color: transparent;
+    border: none;
+    cursor: pointer
+}
+button .seta-turbine{
+    width: 20px;
+    height: 20px;
+    margin-right: 115px;
+}
+.seta-destaque1{
+    display: inline-block;
+    margin-right: 2px;
+}
+.seta-destaque2{
+    display: inline-block;
+}
+.container-seta-destaque{
+    display: block;
+    margin-top: 1rem;
+    margin-left: 35%;
+    margin-right: 40%;
+}
+.preco-carrinho{
+    display: block;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+    margin-left: 38%;
+    border-radius: 10px;
+    background-color: grey;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+@keyframes growup {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0B68F4;
+        font-size: 17px;
+    }
+}
+@keyframes growup-2 {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0B68F4;
+        font-size: 23px;
+    }
+}
+
+*{
+    font-family: 'Arimo', sans-serif;
+    text-decoration: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #090909;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; left: 0; right: 0;
+
+}
+.header .logo img{
+    width: 7rem;
+    margin: 1.5rem 0 0 3rem;
+    background-color: none;
+}
+.header .logo img:hover{
+    filter: invert(40%) sepia(100%) saturate(5899%) hue-rotate(212deg) brightness(102%) contrast(92%);
+    transition-duration: 0.1s;
+}
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .navbar a{
+    display: flex;
+    margin: 0 5rem 0 0;
+    color: white;
+}
+.header .navbar a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.header div form{
+    max-width: 450px;
+    min-width: 450px;
+    width: 100%;
+    height: 2rem;
+
+    margin: -1% 0 0 4rem;
+
+    background-color: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.header div form input{
+    max-width: 450px;
+    width: 100%;
+    height: 2rem;
+
+    text-align: center;
+
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.container2 a{
+    color: white;
+    cursor: pointer;
+}
+.container2 a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.preco-carrinho{
+    display: block;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+    margin-left: 38%;
+    border-radius: 10px;
+    background-color: grey;
+}
+.header .container2{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 0 0;
+}
+.header .container2 .login{
+    margin: 0 0.5rem 0 0;
+}
+.header .container2 .carrinho{
+    margin: 0 5rem 0 5rem;
+}
+.header .container2 .carrinho img{
+    width: 40px;
+    max-width: 60px;
+    min-width: 40px;
+}
+.header .container2 .carrinho img:hover{
+    filter: invert(40%) sepia(100%) saturate(5899%) hue-rotate(212deg) brightness(102%) contrast(92%);
+    transition-duration: 0.1s;
+}
+
+.produto-finalizacao{
+    display: inline;
+    margin-top: 10%;
+    margin-left: 6%;
+    width: 400px;
+
+    box-shadow: 10px 5px 5px black;;
+
+    border-radius: 20px;
+}
+.div-img-produto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-nome-produto{
+    margin: 400px 0 0 18px;
+}
+.nome-produto{
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+
+    color: #FFFFFF;
+
+}
+.vendido-por{
+    display: block;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+
+    opacity: 0.75;
+}
+.status-prod{
+    width: 430px;
+    height: 480px;
+    margin: 8rem 8rem 0 14rem;
+    background-color: #7f7f7f;
+
+    border-radius: 50px;
+}
+.status-prod h1{
+    text-align: center;
+    margin-top: 25px;
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 39px;
+    color: white;
+}
+.div-p{
+    margin-left: 43px;
+}
+.p-headset{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 29px;
+    color: white;
+    margin-top: 46px;
+}
+
+.p-preco-head{
+    font-weight: 400;
+    line-height: 39px;
+    text-decoration-line: line-through;
+
+    color: #FFFFFF;
+
+    opacity: 0.5;
+}
+.p-preco-desc-head{
+    font-weight: 400;
+    line-height: 25px;
+
+    color: #FFFFFF;
+}
+.p-parcelas{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 29px;
+
+    color: #FFFFFF;
+}
+.div-preco{
+    margin-top: 21px;
+    font-size:28px;
+}
+.p-previsao-entrega{
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: white;
+
+    margin-top: 17px;
+}
+.p-data-entrega{
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 29px;
+
+    margin-top: 9px;
+
+    color: #FFFFFF;
+
+    opacity: 0.6;
+}
+.p-visu-produto{
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-decoration-line: underline;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    margin-top: 55px;
+}
+.p-visu-produto a{
+    color: white
+}
+.divider{
+    border: 1px solid #323232;
+    margin: 10rem 4rem 3rem 4rem;
+    border-radius:2px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 40% 2.5rem 10%;
+}
+footer a{
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+}
+footer a:hover{
+    color: #0B68F4; 
+    transition-duration: 0.1s;
+}

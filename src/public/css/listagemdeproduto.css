@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo&display=swap');
+
+@keyframes growup {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0B68F4;
+        font-size: 17px;
+    }
+}
+@keyframes growup-2 {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #0B68F4;
+        font-size: 23px;
+    }
+}
+
+*{
+    font-family: 'Arimo', sans-serif;
+    text-decoration: none;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #090909;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0; left: 0; right: 0;
+
+}
+.header .logo img{
+    width: 7rem;
+    margin: 1.5rem 0 0 3rem;
+    background-color: none;
+}
+.header .logo img:hover{
+    filter: invert(40%) sepia(100%) saturate(5899%) hue-rotate(212deg) brightness(102%) contrast(92%);
+    transition-duration: 0.1s;
+}
+.header .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .navbar a{
+    display: flex;
+    margin: 0 5rem 0 0;
+    color: white;
+}
+.header .navbar a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.header div form{
+    max-width: 450px;
+    min-width: 450px;
+    width: 100%;
+    height: 2rem;
+
+    margin: -1% 0 0 4rem;
+
+    background-color: #c4c4c4;
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.header div form input{
+    max-width: 450px;
+    width: 100%;
+    height: 2rem;
+    border: none;
+
+    text-align: center;
+
+    opacity: 0.5;
+    border-radius: 20px;
+}
+.container2 a{
+    color: white;
+    cursor: pointer;
+}
+.container2 a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.preco-carrinho{
+    display: block;
+    text-align: center;
+    width: 25%;
+    cursor: pointer;
+    margin-left: 38%;
+    border-radius: 10px;
+    background-color: grey;
+}
+.header .container2{
+    display: flex;
+    align-items: center;
+    margin: 0 2rem 0 0;
+}
+.header .container2 .login{
+    margin: 0 0.5rem 0 0;
+}
+.header .container2 .carrinho{
+    margin: 0 5rem 0 5rem;
+}
+.header .container2 .carrinho img{
+    width: 40px;
+    max-width: 60px;
+    min-width: 40px;
+}
+.header .container2 .carrinho img:hover{
+    filter: invert(40%) sepia(100%) saturate(5899%) hue-rotate(212deg) brightness(102%) contrast(92%);
+    transition-duration: 0.1s;
+}
+
+main{
+    display: flex;
+}
+
+.container-categorias h1{
+    font-size: 30px;
+    color: #FFFFFF;
+
+    margin: 3rem 3rem;
+}
+.container-categorias li a{
+    color: #fff;
+    margin: 1.5rem 2rem;
+    line-height: 30px;
+}
+.container-categorias li a:hover{
+    color: #0B68F4;
+    transition-duration: 0.1s;
+}
+.container-categorias label{
+    font-size: 18px;
+    line-height: 30px;
+
+    color:#fff;
+}
+.container-preco-min{
+    margin-left: 35px;
+}
+.container-preco-max{
+    margin-left: 35px;
+}
+.container-preco-min-max div input{
+    width: 30%;
+    height: 20px;
+
+    margin-left: 5px;
+
+    border-radius: 15px;
+    border: none;
+
+    text-align: center;
+    opacity: 0.7;
+}
+.container-headset, .container-headset2, .container-headset3{
+    display: flex;
+    margin-top: 40px;
+}
+.container-headset a img, .container-headset2 a img, .container-headset3 a img{
+    width: 210px;
+    margin-right: 40px;
+    margin-left: 40px;
+    border-radius: 20px;
+}
+.container-headset p, .container-headset2 p, .container-headset3 p{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 4px;
+    color: white;
+}
+
+.divider{
+    border: 1px solid #323232;
+    margin: 10rem 4rem 3rem 4rem;
+    border-radius:2px;
+}
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 40% 2.5rem 10%;
+}
+footer a{
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+}
+footer a:hover{
+    color: #0B68F4; 
+    transition-duration: 0.1s;
+}
+
+
