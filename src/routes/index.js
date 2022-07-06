@@ -1,22 +1,25 @@
 const express = require('express');
 const router = express.Router();
 const mainController = require('../controllers/mainController')
+const loginController = require('../controllers/loginController')
 const { body } = require('express-validator')
 
 const validacoes = [
     body('email')
         .notEmpty()
-        .withMessage('Esse campo deve ser preenchido'),
+        .withMessage('Email não pode ser vazio')
+        .bail()
+        .trim(),
 
     body('senha')
         .notEmpty()
-        .withMessage('Esse campo deve ser preenchido'),
+        .withMessage('Senha não pode ser vazia'),
 ]
 
 router.get('/', mainController.home)
 
-router.get('/login', mainController.login)
-router.post('/login',validacoes , mainController.loginUser)
+router.get('/login', loginController.login)
+router.post('/login',validacoes , loginController.loginUser)
 
 router.get('/register', mainController.register)
 router.get('/listaDeDesejos', mainController.listaDeDesejos)
