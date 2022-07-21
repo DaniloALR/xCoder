@@ -13,7 +13,12 @@
     <title>XCoder</title> 
 </head>
 <body>
-    <%- include('./partials/header') %>
+    <% if(!user) {%>
+        <%- include('./partials/header', {user: undefined}); %>
+    <% } else { %>
+        <%- include('./partials/header', {user: user}); %>
+    <% } %>
+
     <main>
         <section class="container-categorias">
             <h1>Categorias</h1>

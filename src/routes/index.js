@@ -22,6 +22,7 @@ router.get('/login', loginController.login)
 router.post('/login',validacoes , loginController.loginUser)
 
 router.get('/register', mainController.register)
+router.get('/paineldousuario', mainController.painelDoUsuario)
 router.get('/listaDeDesejos', mainController.listaDeDesejos)
 router.get('/carrinho', mainController.carrinho)
 router.get('/produtoInterno', mainController.produtoInterno)
