@@ -9,13 +9,17 @@
         </form>
 
         <div class="container2">
-            <a href="./listadedesejos" class="listadedesejos">Lista de Desejos</a>
+            <a href="./paineldousuario" class="listadedesejos">Lista de Desejos</a>
             <div>
                 <a class="carrinho" href="./carrinho"><img src="/images/cart.svg" alt="carrinhoDeCompras"></a>
                 <div class="preco-carrinho"><p>$150</p></div>
             </div>
-            <a href="./login" class="login">Log in </a>
-            <a href="./register" class="register"> Sign up</a>
+            <% if(!user) {%>
+            <a href="./login" class="login" name="login">Log in </a>
+            <a href="./register" class="register" name="register"> Sign up</a>
+            <% } else { %>
+                <a href="./paineldousuario"><%= user.name %></a>
+            <% } %>
         </div>  
 
     </div>

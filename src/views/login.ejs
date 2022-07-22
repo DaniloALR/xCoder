@@ -10,30 +10,41 @@
     href="/images/xcoder-black-background.ico"
     type="image/x-icon"
    />
+    <script type="text/javascript" src="/javascript/script.js"></script>
     <title>XCoder</title> 
 </head>
-    <body>
-    <%- include('./partials/header') %>
-        <body>
+
+
+<body>
+          <body>
+            <% if(!user) {%>
+              <%- include('./partials/header', {user: undefined}); %>
+          <% } else { %>
+              <%- include('./partials/header', {user: user}); %>
+          <% } %>
+          
           <main>
             <section class="container-login">
               <h1>Já sou cadastrado!</h1>
-              <% if(typeof errors !== 'undefined'){ %>
-                <ul>
-                  <% for (let error in errors){ %>
-                    <li><%= errors[error].msg %></li>
-                    <% } %>
-                </ul>
-              <% } %>
-                  
-              <form action="/login" method="POST">
+              
+              
+              <form action="/login" method="POST" class="form-login">
+
         
                 <div class="input-container">
-                  <input type="email" name="email" id="email" placeholder = "E-mail">
+                  <input type="text" name="email" id="email" placeholder = "E-mail">
+
+                  <ul>
+                    <li><small class="small-email"></small></li>
+                  </ul>
                 </div>
         
                 <div class="input-container">
                   <input type="password" name="senha" id="senha" placeholder = "Senha">
+                  
+                  <ul>
+                    <li><small class="small-senha"></small></li>
+                  </ul>
                 </div>
 
                 <div class="div-checkbox">

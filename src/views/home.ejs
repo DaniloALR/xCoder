@@ -5,7 +5,11 @@
     
 <body>
 
-    <%- include('./partials/header'); %>
+    <% if(!user) {%>
+        <%- include('./partials/header', {user: undefined}); %>
+    <% } else { %>
+        <%- include('./partials/header', {user: user}); %>
+    <% } %>
     
     <section class="container-destaque-semanal">
         <h1 class="destaque-semanal">Destaque da semana</h1>

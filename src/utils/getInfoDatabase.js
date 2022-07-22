@@ -9,5 +9,4 @@ function getInfoDatabase(filename){
     return infos
 }
 
-
 module.exports = getInfoDatabase

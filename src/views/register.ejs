@@ -13,7 +13,11 @@
         <title>XCoder</title> 
     </head>
     <body>
-        <%- include('./partials/header') %>
+      <% if(!user) {%>
+        <%- include('./partials/header', {user: undefined}); %>
+    <% } else { %>
+        <%- include('./partials/header', {user: user}); %>
+    <% } %>
         <div class="div-h1">
             <h1 class="h1-1">Cadastrar dados pessoais</h1>
 
